@@ -1,0 +1,92 @@
+:root {
+  --primary: #3387a3;
+  --secondar: #40a5c7;
+}
+
+.nav-link {
+  margin-right: 40px;
+  font-weight: bold;
+}
+
+.btn-sign {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.btn-sign:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-active {
+  border: none;
+  color: white;
+  font-weight: bold;
+  background: var(--primary);
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+.btn-active:hover {
+  background: var(--secondar);
+}
+
+.search-bar {
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid grey;
+}
+.btn-more {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
+
+  border: none;
+  color: white;
+  font-weight: bold;
+  background: var(--primary);
+  padding: 3px 15px;
+  border-radius: 10px;
+}
+
+.next .task .reward .the-reward {
+  font-size: 18px;
+}
+
+.task {
+  color: purple;
+}
+.the-reward {
+  color: green;
+}
+
+.card {
+  border-radius: 20px !important;
+  box-shadow: 0px 10px 20px grey;
+}
+
+.progress-bar {
+  background-color: rgb(47, 255, 186);
+}
+
+.bg-1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -999;
+  width: 22%;
+}
+
+.bg-2 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -999;
+  width: 15%;
+}
