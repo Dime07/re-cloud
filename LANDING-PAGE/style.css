@@ -1,0 +1,153 @@
+:root {
+  --blue: #68bae8;
+  --red: #fe5e7a;
+  --yellow: #ffbd55;
+  --blue-green: #45b6bf;
+  --darkblue: #212885;
+  --button: #3387a3;
+  --textgrey: #878787;
+}
+.wrap-container {
+  overflow: hidden;
+}
+.navbar {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+
+  background-color: white;
+}
+
+.nav-link {
+  margin-right: 40px;
+  font-weight: bold;
+  color: #35809b9d !important;
+}
+
+.nav-link:hover {
+  color: #21505f !important;
+}
+
+.active {
+  color: var(--button) !important;
+}
+
+.btn-sign {
+  border: 1px solid var(--button);
+  color: var(--button);
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  width: 100px;
+}
+
+.btn-sign:hover {
+  background: var(--button);
+  color: white;
+}
+
+.btn-active {
+  border: none;
+  color: white;
+  font-weight: bold;
+  background: var(--button);
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+.btn-active:hover {
+  background: var(--blue);
+}
+
+.slogan {
+  color: var(--blue);
+  font-size: 56px;
+  font-weight: bold;
+}
+
+.try-it {
+  font-weight: bold;
+  color: var(--textgrey);
+  font-size: 30px;
+}
+
+.decor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
+/* --------goals word----------- */
+#o {
+  color: var(--yellow);
+}
+#a {
+  color: var(--red);
+}
+#l {
+  color: var(--blue-green);
+}
+#s {
+  color: var(--darkblue);
+}
+
+/* ----------------------------- */
+
+/* ---------try it------------- */
+#f {
+  color: var(--blue-green);
+}
+#r {
+  color: var(--yellow);
+}
+#e1 {
+  color: var(--red);
+}
+#e2 {
+  color: var(--darkblue);
+}
+/* ---------------------------- */
+
+.dev-ava {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#round-orange {
+  width: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+
+#circle-blue {
+  width: 15%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -999;
+}
+
+.footer {
+  background: linear-gradient(92.67deg, #45b6bf 37.84%, #7e57ff 88.43%);
+}
+
+/* small devices (landscape phones, 576px and up) */
+@media (min-width: 300px) {
+  .slogan {
+    font-size: 35px;
+  }
+  .btn-sign {
+    width: 80px;
+    padding: 4px 10px;
+  }
+}
+
+@media (min-width: 576px) {
+  .slogan {
+    font-size: 56px;
+  }
+}
