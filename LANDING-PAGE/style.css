@@ -42,6 +42,10 @@
   width: 100px;
 }
 
+.btn-sign:focus {
+  outline: none;
+}
+
 .btn-sign:hover {
   background: var(--button);
   color: white;
