@@ -1,38 +1,68 @@
 :root {
-  --primary: #3387a3;
-  --secondar: #40a5c7;
+  --blue: #68bae8;
+  --red: #fe5e7a;
+  --yellow: #ffbd55;
+  --blue-green: #45b6bf;
+  --darkblue: #212885;
+  --button: #3387a3;
+  --textgrey: #878787;
+}
+
+.wrap-container {
+  overflow: hidden;
+}
+.navbar {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+
+  background-color: white;
 }
 
 .nav-link {
   margin-right: 40px;
   font-weight: bold;
+  color: #35809b9d !important;
+}
+
+.nav-link:hover {
+  color: #21505f !important;
 }
 
 .btn-sign {
-  border: 1px solid var(--primary);
-  color: var(--primary);
+  border: 1px solid var(--button);
+  color: var(--button);
   font-weight: bold;
   padding: 8px 15px;
   border-radius: 10px;
   background-color: transparent;
+  width: 100px;
 }
 
 .btn-sign:hover {
-  background: var(--primary);
+  background: var(--blue);
   color: white;
+}
+
+.btn-sign:focus {
+  outline: none;
 }
 
 .btn-active {
   border: none;
   color: white;
   font-weight: bold;
-  background: var(--primary);
+  background: var(--button);
   padding: 8px 15px;
   border-radius: 10px;
 }
 
+.active {
+  color: var(--button) !important;
+}
+
 .btn-active:hover {
-  background: var(--secondar);
+  background: var(--blue);
 }
 
 .search-bar {
@@ -50,7 +80,7 @@
   border: none;
   color: white;
   font-weight: bold;
-  background: var(--primary);
+  background: var(--blue);
   padding: 3px 15px;
   border-radius: 10px;
 }
@@ -89,4 +119,55 @@
   bottom: 0;
   z-index: -999;
   width: 15%;
+}
+
+#card-item {
+  width: 800px;
+}
+
+.btn-update {
+  border-radius: 10px;
+  background-color: var(--darkblue);
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+.btn-update:hover {
+  color: white;
+  background-color: #343dbe;
+}
+
+.btn-delete {
+  border-radius: 10px;
+  background-color: var(--red);
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.btn-delete:hover {
+  color: white;
+  background-color: #f67c91;
+}
+
+.btn-close-modal {
+  background-color: var(--red) !important;
+  border-radius: 5px !important;
+  border: none !important;
+  color: white !important;
+}
+
+/* UKURAN LAYAR */
+@media (max-width: 768px) {
+  #card-item {
+    width: 600px;
+  }
+}
+
+@media (max-width: 400px) {
+  #card-item {
+    width: 340px;
+  }
 }
